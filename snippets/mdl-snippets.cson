@@ -1,0 +1,129 @@
+'.text.html':
+  'MDL HTML':
+    'prefix': 'mdl-html'
+    'body': """
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>${1:Material Design Lite}</title>
+          <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+          <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        </head>
+        <body>
+          <div class="mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header mdl-layout__header--scroll">
+              <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">$2</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation">
+                  ${3:<!-- Add MDL Navigation Links here -->}
+                </nav>
+              </div>
+            </header>
+            <div class="mdl-layout__drawer">
+              <span class="mdl-layout-title">$4</span>
+              <nav class="mdl-navigation">
+                ${5:<!-- Add MDL Navigation Links here -->}
+              </nav>
+            </div>
+            <main class="mdl-layout__content">
+              $6
+            </main>
+          </div>
+        </body>
+      </html>
+    """
+  'MDL Navigation Link':
+    'prefix': 'mdl-nav-link'
+    'body': '<a class="mdl-navigation__link" href="$1">$2</a>'
+  'MDL Grid':
+    'prefix': 'mdl-grid'
+    'body': """
+      <div class="mdl-grid">
+        $1
+      </div>
+    """
+  'MDL Cell':
+    'prefix': 'mdl-cell'
+    'body': """
+      <div class="mdl-cell mdl-cell--$1-col">
+        $2
+      </div>
+    """
+  'MDL Badge':
+    'prefix': 'mdl-badge'
+    'body': '<span class="material-icons mdl-badge" data-badge="$1">$2</span>'
+  'MDL Button':
+    'prefix': 'mdl-button'
+    'body': '<button class="mdl-button mdl-js-button mdl-button--primary">$1</button>'
+  'MDL Progress Bar':
+    'prefix': 'mdl-progress'
+    'body': '<div id="p1" class="mdl-progress mdl-js-progress"></div>'
+  'MDL Spinner':
+    'prefix': 'mdl-spin'
+    'body': '<div class="mdl-spinner mdl-js-spinner is-active"></div>'
+  'MDL Menu':
+    'prefix': 'mdl-menu'
+    'body':"""
+      <button id="demo-menu-top-left" class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">more_vert</i>
+      </button>
+      <ul class="mdl-menu mdl-menu--top-left mdl-js-menu mdl-js-ripple-effect" for="demo-menu-top-left">
+        ${1:<!-- Add MDL Menu Items here -->}
+      </ul>
+    """
+  'MDL Menu Item':
+    'prefix': 'mdl-menu-item'
+    'body': '<li class="mdl-menu__item">$1</li>'
+  'MDL Slider':
+    'prefix': 'mdl-slider'
+    'body': '<input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="0" tabindex="0">'
+  'MDL Checkbox':
+    'prefix': 'mdl-check'
+    'body': """
+      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+        <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+        <span class="mdl-checkbox__label">$1</span>
+      </label>
+    """
+  'MDL Radio Button':
+    'prefix': 'mdl-radio'
+    'body': """
+      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
+        <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+        <span class="mdl-radio__label">$1</span>
+      </label>
+    """
+  'MDL Switch':
+    'prefix': 'mdl-switch'
+    'body': """
+      <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
+        <input type="checkbox" id="switch-1" class="mdl-switch__input" checked>
+        <span class="mdl-switch__label"></span>
+      </label>
+    """
+  'MDL Table':
+    'prefix': 'mdl-table'
+    'body': """
+      <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+        $1
+      </table>
+    """
+  'MDL Text Field':
+    'prefix': 'mdl-text'
+    'body': """
+      <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="sample1">
+          <label class="mdl-textfield__label" for="sample1">$1</label>
+        </div>
+      </form>
+    """
+  'MDL Tooltip':
+    'prefix': 'mdl-tooltip'
+    'body': '<span class="mdl-tooltip" for="$1">$2</span>'
