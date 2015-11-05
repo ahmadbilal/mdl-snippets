@@ -1,14 +1,14 @@
 {
   "name": "mdl-snippets",
   "main": "./lib/mdl-snippets",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Material Design Lite snippets for Atom",
   "keywords": [
   ],
   "activationCommands": {
     "atom-workspace": "mdl-snippets:toggle"
   },
-  "repository": "https://github.com/atom/mdl-snippets",
+  "repository": "https://github.com/ahmadbilal/mdl-snippets",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
