@@ -1,10 +1,9 @@
 {
   "name": "mdl-snippets",
   "main": "./lib/mdl-snippets",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Material Design Lite snippets for Atom",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "mdl-snippets:toggle"
   },
@@ -13,6 +12,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
