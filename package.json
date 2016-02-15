@@ -1,7 +1,7 @@
 {
   "name": "mdl-snippets",
   "main": "./lib/mdl-snippets",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Material Design Lite snippets for Atom",
   "keywords": [],
   "activationCommands": {
